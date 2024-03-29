@@ -18,6 +18,8 @@
 		59C113332BB6B7B6006E4582 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C113322BB6B7B6006E4582 /* APIManager.swift */; };
 		59C113352BB6B7D1006E4582 /* PersistenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C113342BB6B7D1006E4582 /* PersistenseManager.swift */; };
 		59C113392BB6B825006E4582 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C113382BB6B825006E4582 /* HapticsManager.swift */; };
+		59C1133B2BB6D65D006E4582 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1133A2BB6D65D006E4582 /* Extentions.swift */; };
+		59C1133D2BB6DA16006E4582 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1133C2BB6DA16006E4582 /* SearchResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		59C113322BB6B7B6006E4582 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		59C113342BB6B7D1006E4582 /* PersistenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenseManager.swift; sourceTree = "<group>"; };
 		59C113382BB6B825006E4582 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		59C1133A2BB6D65D006E4582 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		59C1133C2BB6DA16006E4582 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,8 @@
 		59C113282BB6B4B7006E4582 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				59C113172BB6B463006E4582 /* WatchItemsViewController.swift */,
 				59C1132C2BB6B597006E4582 /* NewsViewController.swift */,
+				59C113172BB6B463006E4582 /* WatchItemsViewController.swift */,
 				59C1132E2BB6B5D4006E4582 /* SearchResultsViewController.swift */,
 				59C113302BB6B5EC006E4582 /* StockDetailsViewController.swift */,
 			);
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				59C1131E2BB6B465006E4582 /* LaunchScreen.storyboard */,
+				59C1133C2BB6DA16006E4582 /* SearchResultTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				59C113132BB6B463006E4582 /* AppDelegate.swift */,
 				59C113152BB6B463006E4582 /* SceneDelegate.swift */,
 				59C1131C2BB6B465006E4582 /* Assets.xcassets */,
+				59C1133A2BB6D65D006E4582 /* Extentions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -193,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C113392BB6B825006E4582 /* HapticsManager.swift in Sources */,
+				59C1133D2BB6DA16006E4582 /* SearchResultTableViewCell.swift in Sources */,
 				59C113312BB6B5EC006E4582 /* StockDetailsViewController.swift in Sources */,
+				59C1133B2BB6D65D006E4582 /* Extentions.swift in Sources */,
 				59C113182BB6B463006E4582 /* WatchItemsViewController.swift in Sources */,
 				59C113142BB6B463006E4582 /* AppDelegate.swift in Sources */,
 				59C113352BB6B7D1006E4582 /* PersistenseManager.swift in Sources */,
