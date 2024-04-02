@@ -11,9 +11,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        APIManager.shared.search(query: "Google") { result in
+            if case .success(let response) = result {
+                print(response.result)
+            } else if case .failure(let error) = result {
+                print(error)
+            }
+        }
+        
         return true
     }
 

@@ -20,6 +20,7 @@
 		59C113392BB6B825006E4582 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C113382BB6B825006E4582 /* HapticsManager.swift */; };
 		59C1133B2BB6D65D006E4582 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1133A2BB6D65D006E4582 /* Extentions.swift */; };
 		59C1133D2BB6DA16006E4582 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1133C2BB6DA16006E4582 /* SearchResultTableViewCell.swift */; };
+		59C1133F2BB9E35F006E4582 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1133E2BB9E35E006E4582 /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		59C113382BB6B825006E4582 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		59C1133A2BB6D65D006E4582 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		59C1133C2BB6DA16006E4582 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		59C1133E2BB9E35E006E4582 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		59C113272BB6B4AE006E4582 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				59C1133E2BB9E35E006E4582 /* SearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				59C113142BB6B463006E4582 /* AppDelegate.swift in Sources */,
 				59C113352BB6B7D1006E4582 /* PersistenseManager.swift in Sources */,
 				59C113162BB6B463006E4582 /* SceneDelegate.swift in Sources */,
+				59C1133F2BB9E35F006E4582 /* SearchResponse.swift in Sources */,
 				59C1132D2BB6B597006E4582 /* NewsViewController.swift in Sources */,
 				59C1132F2BB6B5D4006E4582 /* SearchResultsViewController.swift in Sources */,
 				59C113332BB6B7B6006E4582 /* APIManager.swift in Sources */,
