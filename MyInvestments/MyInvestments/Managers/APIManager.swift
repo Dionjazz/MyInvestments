@@ -11,14 +11,25 @@ final class APIManager {
     
     static let shared = APIManager()
     
+    //MARK: - Public
+    
+    public func search(
+        query: String,
+        completion: @escaping (Result<SearchResponse, Error>) -> Void
+    ) {
+
+        request(url: url(for: .search, queryParam: ["q" : query]), expecting: SearchResponse.self, completion: completion)
+    }
+    
+    // MARK: - Private
     private init() {
         
     }
     
     private struct Constants {
-        static let apiKey = ""
+        static let apiKey = "co4q8f1r01qnik2utnvgco4q8f1r01qnik2uto00"
         static let sandBoxApiKey = ""
-        static let baseUrl = ""
+        static let baseUrl = "https://finnhub.io/api/v1"
     }
     
     private enum Endpoint: String {
@@ -30,13 +41,26 @@ final class APIManager {
         case noDataReturn
     }
     
-    
-    
     private func url(for endpoint: Endpoint,
                      queryParam: [String: String] = [:]
     ) -> URL? {
+        var urlString = Constants.baseUrl + endpoint.rawValue
         
-        return nil
+        var queryItems = [URLQueryItem]()
+        
+        for(name, value) in queryParam {
+            queryItems.append(.init(name: name, value: value))
+        }
+        
+        queryItems.append(.init(name: "token", value: Constants.apiKey))
+        
+        let queryString = queryItems.map { "\($0.name)=\($0.value ?? "")" }.joined(separator: "&")
+        
+        urlString += "?" + queryString
+        
+        print("\n\(urlString)\n")
+        
+        return URL(string: urlString)
     }
     
     private func request<T: Codable>(url: URL?, expecting: T.Type, completion: @escaping(Result<T, Error>) -> Void) {
